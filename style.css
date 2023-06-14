@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 5px;
+    display: flex;
+    background-color: rgb(215, 240, 231);
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar h1 {
+    margin: 10px 5px;
+}
+
+.menu {
+    display: flex;
+    margin: 10px 5px;
+
+}
+.menu a {
+    margin: 10px 5px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s solid;
+    text-transform: uppercase;
+}
+.menu a:hover {
+    color: rgb(238, 177, 177);
+    text-shadow: 1px 1px 10px;
+}
