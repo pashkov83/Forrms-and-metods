@@ -16,7 +16,10 @@ body {
     align-items: center;
 
 }
-
+.title {
+    margin: 0 auto;
+    text-align: center;
+}
 .navbar h1 {
     margin: 10px 5px;
 }
@@ -93,4 +96,7 @@ button {
 
 input, label {
     margin-bottom: 15px;
+}
+#dropdown {
+    padding: 10px;
 }

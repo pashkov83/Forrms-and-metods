@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkbox</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -18,33 +20,51 @@
                 </div>
             </div>
         </nav>
-    <section class="checkbx">
-        <form class="checkform" action="" method="get">
-        <h3>Удалить данные о пользователе</h3>
-            <div class="input">
-                <input id="email" type="checkbox">
-                <label for="email">удалить почту</label> <br>
-                <input id="tel" type="checkbox">
-                <label for="tel">удалить контактные данные</label><br>
-                <input id="login" type="checkbox">
-                <label for="login">удалить логин</label><br>
-                <input id="pwd" type="checkbox">
-                <label for="pwd">удалить пароль</label><br>
+        <section class="checkbx">
+            <form class="checkform" action="/invoices" method="get">
+                <h3>Удалить данные о пользователе</h3>
+                <div class="input">
+                    <input id="email" type="checkbox" name="email">
+                    <label for="email">удалить почту</label> <br>
+                    <input id="tel" type="checkbox" name="tel">
+                    <label for="tel">удалить контактные данные</label><br>
+                    <input id="login" type="checkbox" name="login">
+                    <label for="login">удалить логин</label><br>
+                    <input id="pwd" type="checkbox" name="pwd">
+                    <label for="pwd">удалить пароль</label><br>
+                </div>
+                <div class="btn">
+                    <button type="submit">Удалить данные</button>
+                </div>
+            </form>
+            <div class="other-inp">
+                <form action="" method="get">
+                    <h5>Выберите возраст</h5>
+                    <select name="dropdown" id="dropdown">
+                        <option value="1">0-12</option>
+                        <option value="2">13-18</option>
+                        <option value="3">19-30</option>
+                        <option value="4">31-50</option>
+                        <option value="4">51-80</option>
+                        <option value="4">81+</option>
+                    </select>
+                    <button type="submit">Сохранить</button>
+                </form>
             </div>
-            <div class="btn">
-                <button type="submit">Удалить данные</button>
+            <div class="other-inp">
+                <form action="" method="get">
+                    <h5>Выберите дату</h5>
+                    <input type="date" name="date">
+                    <button type="submit">Сохранить</button>
+                </form>
             </div>
-        </form>
-        <div class="other-inp">
-            
-            <input type="date">
-        </div>
-    </section>
+        </section>
 
 
 
     </header>
 
-    
+
 </body>
+
 </html>
