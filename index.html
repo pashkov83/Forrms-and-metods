@@ -39,25 +39,21 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <form id="userData" class="userData" action="/login" method="post">
+                                        <form id="userData" class="userData" action="login.html" method="post">
                                             <div>
                                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                <input name="email" type="email" class="form-control" id="exampleInputEmail1"
                                                     aria-describedby="emailHelp">
                                             </div>
                                             <div>
                                                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                                <input name="password" type="password" class="form-control" id="exampleInputPassword1">
                                             </div>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Закрыть</button>
-                                        <label for="userData">
-                                            <button type="button" class="btn btn-primary"
-                                                type="submit">Зарегистрироваться</button>
-                                        </label>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        <button class="btn btn-primary" type="submit" form="userData">Войти</button>
                                     </div>
                                 </div>
                             </div>
