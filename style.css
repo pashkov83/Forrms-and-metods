@@ -8,24 +8,21 @@ body {
     box-sizing: border-box;
 }
 
-.navbar {
-    padding: 5px;
-    display: flex;
+.navbarBgc {
+
     background-color: rgb(215, 240, 231);
-    justify-content: space-between;
-    align-items: center;
 
 }
-.title {
-    margin: 0 auto;
-    text-align: center;
+.navItems {
+    margin-right: 50px;
 }
-.navbar h1 {
-    margin: 10px 5px;
+.collapse {
+    justify-content: end;
 }
+
+
 
 .menu {
-    display: flex;
     margin: 10px 5px;
 
 }
