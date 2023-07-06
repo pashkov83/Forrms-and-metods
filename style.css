@@ -14,7 +14,7 @@ body {
 
 }
 .navItems {
-    margin-right: 50px;
+    margin-right: 10px;
 }
 .collapse {
     justify-content: end;
@@ -43,13 +43,13 @@ body {
     color: rgb(238, 177, 177);
     text-shadow: 1px 1px 10px;
 }
-.col-sm-4 {
-    margin: 10px auto;
-}
 
-.col-sm-4 {
+
+.col-md-4 {
     border: 1px solid #ecececa9;
     padding: 5px;
+    margin: 10px auto;
+
 }
 
 .loginuser {

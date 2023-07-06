@@ -11,24 +11,24 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbarBgc">
+        <nav class="navbar navbar-expand-md navbarBgc">
             <h1 class="text-start m-0">LOGO</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav nav-underline flex-nowrap navItems">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <ul class="nav nav-underline flex-nowrap navItems justify-content-end">
                     <li class="nav-item">
-                        <a class="flex nav-link text-uppercase" aria-current="page" href="checkbox.html">чекбоксы</a>
+                        <a class="flex nav-link text-uppercase" aria-current="page" href="index.html">главная</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <section class="row ms-5 me-5">
-            <div class="col-sm-4 d-flex flex-wrap justify-content-center">
+            <div class="col-md-4 d-flex flex-wrap justify-content-center">
                 <h4 class="text-center">Удалить данные о пользователе</h3>
                     <form action="invoices" method="get">
                         <div class="form-check">
@@ -58,27 +58,26 @@
                         <button type="submit" class="btn btn-danger">Удалить данные</button>
                     </form>
             </div>
-            <div class="col-sm-4 d-flex flex-wrap justify-content-center">
-                <h4 class="text-center">Выберите возраст</h3>
-                    <form action="index.html" method="get">
-                        <select class="form-select" aria-label="Default select example">
+            <div class="col-md-4 d-flex flex-wrap justify-content-center">
+                <h4 class="text-center">Выберите возраст</h3><br>
+                    <form action="" method="post">
+                        <select class="form-select" aria-label="Default select example" name="userAge">
                             <option selected>Выберите возраст</option>
                             <option value="1">0-12</option>
                             <option value="2">13-18</option>
                             <option value="3">19-30</option>
                             <option value="4">31-50</option>
-                            <option value="4">51-80</option>
-                            <option value="4">81+</option>
+                            <option value="5">51-80</option>
+                            <option value="6">81+</option>
                         </select>
                         <button type="submit" class="btn btn-success">Сохранить</button>
                     </form>
             </div>
-            <div class="col-sm-4 d-flex flex-wrap justify-content-center">
+            <div class="col-md-4 d-flex flex-wrap justify-content-center">
                 <h4 class="text-center">Выберите дату</h4>
-                <form action="" method="post">
-                    <input class="datepicker" type="date" name="date">
+                <form class="" action="" method="post">
+                    <input class="datepicker d-block form-control" type="date" name="date">
                     <button type="submit" class="btn btn-success">Сохранить</button>
-
                 </form>
             </div>
 
@@ -92,7 +91,7 @@
 
     </header>
 
-    <!--<script src="bootstrap.bundle.min.js"></script>-->
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
