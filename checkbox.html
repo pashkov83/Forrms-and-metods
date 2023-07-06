@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
- 
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbarBgc">
+        <nav class="navbar navbar-expand-sm navbarBgc">
             <h1 class="text-start m-0">LOGO</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -21,56 +21,78 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav nav-underline flex-nowrap navItems">
                     <li class="nav-item">
-                        <a class="flex nav-link text-uppercase" aria-current="page" href="index.html">на главную</a>
+                        <a class="flex nav-link text-uppercase" aria-current="page" href="checkbox.html">чекбоксы</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <section class="checkbx">
-            <form class="checkform" action="/invoices" method="get">
-                <h3>Удалить данные о пользователе</h3>
-                <div class="input">
-                    <input id="email" type="checkbox" name="email">
-                    <label for="email">удалить почту</label> <br>
-                    <input id="tel" type="checkbox" name="tel">
-                    <label for="tel">удалить контактные данные</label><br>
-                    <input id="login" type="checkbox" name="login">
-                    <label for="login">удалить логин</label><br>
-                    <input id="pwd" type="checkbox" name="pwd">
-                    <label for="pwd">удалить пароль</label><br>
-                </div>
-                <div class="btn">
-                    <button type="submit">Удалить данные</button>
-                </div>
-            </form>
-            <div class="other-inp">
+
+        <section class="row ms-5 me-5">
+            <div class="col-sm-4 d-flex flex-wrap justify-content-center">
+                <h4 class="text-center">Удалить данные о пользователе</h3>
+                    <form action="invoices" method="get">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckEmail">
+                            <label class="form-check-label" for="flexCheckEmail">
+                                удалить почту
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckUser">
+                            <label class="form-check-label" for="flexCheckUser">
+                                удалить контактные данные
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckLogin">
+                            <label class="form-check-label" for="flexCheckLogin">
+                                удалить логин
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckPassword">
+                            <label class="form-check-label" for="flexCheckPassword">
+                                удалить пароль
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Удалить данные</button>
+                    </form>
+            </div>
+            <div class="col-sm-4 d-flex flex-wrap justify-content-center">
+                <h4 class="text-center">Выберите возраст</h3>
+                    <form action="index.html" method="get">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Выберите возраст</option>
+                            <option value="1">0-12</option>
+                            <option value="2">13-18</option>
+                            <option value="3">19-30</option>
+                            <option value="4">31-50</option>
+                            <option value="4">51-80</option>
+                            <option value="4">81+</option>
+                        </select>
+                        <button type="submit" class="btn btn-success">Сохранить</button>
+                    </form>
+            </div>
+            <div class="col-sm-4 d-flex flex-wrap justify-content-center">
+                <h4 class="text-center">Выберите дату</h4>
                 <form action="" method="post">
-                    <h5>Выберите возраст</h5>
-                    <select name="dropdown" id="dropdown">
-                        <option value="1">0-12</option>
-                        <option value="2">13-18</option>
-                        <option value="3">19-30</option>
-                        <option value="4">31-50</option>
-                        <option value="4">51-80</option>
-                        <option value="4">81+</option>
-                    </select>
-                    <button type="submit">Сохранить</button>
+                    <input class="datepicker" type="date" name="date">
+                    <button type="submit" class="btn btn-success">Сохранить</button>
+
                 </form>
             </div>
-            <div class="other-inp">
-                <form action="" method="post">
-                    <h5>Выберите дату</h5>
-                    <input type="date" name="date">
-                    <button type="submit">Сохранить</button>
-                </form>
-            </div>
+
+        </section>
+
+        </form>
+
         </section>
 
 
 
     </header>
 
-<script src="bootstrap.bundle.min.js"></script>
+    <!--<script src="bootstrap.bundle.min.js"></script>-->
 </body>
 
 </html>
