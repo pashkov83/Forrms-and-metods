@@ -17,31 +17,42 @@ body {
 *:before {
     box-sizing: border-box;
 }
-header {
+
+header,
+footer {
     color: var(--color2);
 }
+
 .navbar {
-    box-shadow: 1px 11px 22px 1px rgba(0,0,0,0.37);
+    box-shadow: 1px 11px 22px 1px rgba(0, 0, 0, 0.37);
 }
+
 .nav-link {
     color: var(--color2);
 }
+
 .nav-link:hover {
     color: var(--color3);
 }
+.nav-link:focus {
+    color: var(--color3);
+}
+
 .section {
     background-color: var(--color4);
     min-height: 100vh;
     color: var(--color5);
 }
+
 .modal-content {
     background-color: var(--color1);
 }
+.form-select, .form-control {
+ background-color: var(--color4);
+}
+
 .navbarBgc {
-
     background-color: var(--color1);
-    
-
 }
 
 .navItems {
@@ -60,10 +71,13 @@ header {
     margin-right: 10px;
 }
 
+/* footer {
+    min-height: 5rem;
+} */
 
-.menu {
+
+/* .menu {
     margin: 10px 5px;
-
 }
 
 .menu a {
@@ -77,16 +91,17 @@ header {
 .menu a:hover {
     color: rgb(238, 177, 177);
     text-shadow: 1px 1px 10px;
-}
+} */
 
 
 .col-md-3 {
     border: 1px solid #ecececa9;
-    background-color: var(--color3);
+    background-color: var(--color2);
     transition: all .3s;
     color: var(--color1);
     /* -webkit-transition: none; */
 }
+
 .form-check-input[type=checkbox] {
     border-radius: 2rem;
 
@@ -97,8 +112,21 @@ header {
     transform: scale(1.06, 1.06);
     box-shadow: 3px 15px 15px;
 
-
 }
+
+
+.btn-success {
+    background-color: var(--color1);
+}
+
+.btn-success:hover {
+    background-color: var(--color5);
+}
+
+.nav {
+    --bs-nav-link-color: var(var(--color2))
+}
+
 
 /* .divL {
     background-color: aqua;
